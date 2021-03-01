@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ 
+ </head>
+ <body>
+     <ul id ="mypetlist" data-role="listview">
+         <li><a>This is an Item 1</a></li>
+         <li><a>This is an Item 2</a></li>
+     </ul>
+
+     <a id ="btnparrot" href="" class="ui-btn">Add a Parrot</a>
+     <button class="ui-btn ui-icon-delete ui-btn-icon-left">Add a Dog</button>
+ 	
+	
+	
+
+	<a id="btnAddParrot" href="" class="ui-btn ui-btn-b ui-corner-all ui-btn-icon-left ui-icon-plus">Add a Parrot</a>
+	<button id="btnAddDog">Add a Dog</button>
+
+ <script>
+ 	//$: JQuery
+	//$("Selector"): phep chon
+	//$("Selector")."function"
+
+ 	$(document).ready(function(){
+		//alert("Document is ready");
+		$("#btnAddParrot").click(function(){ 
+			
+			//$("#btnAddParrot") equivalent to document.getElementById("btnAddParrot")
+			//.click: equivalent to addEventListener
+
+			//alert("Add Parrot is clicked");
+
+			$("#mypetlist").append('<li><a href="#">A Parrot<button class="view" class="ui-btn ui-btn-inline">View Detail</button></a></li>');
+			$("#mypetlist").listview("refresh");
+
+			$(".view").click(function(){
+				//addEventListener trong luc runtime
+				alert("View Detail is clicked");
+			});
+			
+		});
+
+		$("#btnAddDog").click(function(){
+			//alert("Add Parrot is clicked");
+			$("#mypetlist").append('<li><a href="#">A Dog</a></li>');
+			$("#mypetlist").listview("refresh");
+		});
+
+		
+	});
+ 	
+ </script>
+
+ </body>
+</html>
