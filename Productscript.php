@@ -2,7 +2,7 @@
     <body>
         <p>You have submitted the followings to the server:</p>
             Your name: <?php echo $_POST["name"];?> <br?>
-            Your email: <?php echo_POST["email"];?> <br>
+            Your email: <?php echo $_POST["email"];?> <br>
             <?php
 	$host = "ec2-54-225-190-241.compute-1.amazonaws.com";
 	$dbname = "dd4i93hh9ooitm";
