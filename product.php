@@ -41,14 +41,14 @@
 	//$desc = "Default";
 	 
 	// Attempt insert query execution
-	$sql4 = 'INSERT INTO public."Product" (
+	$sql4 = 'INSERT INTO public."product" (
 			"id","product_name","category","price","descriptions") VALUES ('."
 			'$id'::character varying,'$name'::character varying,'$cat'::character varying,'$price'::integer,'$desc'::character varying)".
 			 'returning "id"';
 	
-	//$sql = "INSERT INTO public.Product (id, product_name, category, date, price, descriptions) VALUES			('001','My Product','Default','04/24/2020','100','Default')";
+	//$sql = "INSERT INTO public.product (id, product_name, category, date, price, descriptions) VALUES			('001','My Product','Default','04/24/2020','100','Default')";
 	
-	if(pg_query($link, $sql4)){
+	if(pg_query($link, $sql)){
 		echo "Records added successfully.";
 	} else{
 		echo "ERROR: Could not able to execute $sql. " . pg_error($link);
