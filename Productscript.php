@@ -27,8 +27,24 @@
 	$price = $_REQUEST["price"];
 	$desc = $_REQUEST["description"];
 
+	echo $id;
+	echo $name;
+	echo $cat;
+	echo $price;
+	echo $desc;
 
+	$sql = 'INSERT INTO public."Product" (
+			"id","product_name","category","price","descriptions") VALUES ('."
+			'$id'::character varying,'$name'::character varying,'$cat'::character varying,'$price'::integer,'$desc'::character varying)".
+			 'returning "id"';
 
+	echo $sql;
+	
+		if(pg_query($link, $sql)){
+		echo "Records added successfully.";
+	} else{
+		echo "ERROR: Could not able to execute $sql. " . pg_error($link);
+	}
 
 
 	?>
