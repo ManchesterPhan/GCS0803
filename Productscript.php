@@ -33,7 +33,7 @@
 	echo $price;
 	echo $desc;
 
-	$sql = 'INSERT INTO public."Product" (
+	$sql = 'INSERT INTO public."product" (
 			"id","product_name","category","price","descriptions") VALUES ('."
 			'$id'::character varying,'$name'::character varying,'$cat'::character varying,'$price'::integer,'$desc'::character varying)".
 			 'returning "id"';
