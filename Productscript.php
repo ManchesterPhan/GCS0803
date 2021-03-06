@@ -25,7 +25,7 @@
 	$name = $_REQUEST["productname"];
 	$cat = $_REQUEST["category"];
 	$price = $_REQUEST["price"];
-	$desc = $_REQUEST["description"];
+	$desc = $_REQUEST["descriptions"];
 
 	echo $id;
 	echo $name;
