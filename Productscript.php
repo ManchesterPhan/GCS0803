@@ -21,6 +21,14 @@
 	}
 
 
+	$id = $_REQUEST["id"];
+	$name = $_REQUEST["productname"];
+	$cat = $_REQUEST["category"];
+	$price = $_REQUEST["price"];
+	$desc = $_REQUEST["description"];
+
+
+
 
 
 	?>
