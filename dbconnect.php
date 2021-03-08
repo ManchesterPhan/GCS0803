@@ -2,8 +2,8 @@
 /* Attempt Heroku Postgres connection 
 	Assuming you are running Heroku Postgres add-on
 	with default setting*/
-	$link = pg_connect("host=ec2-184-72-236-57.compute-1.amazonaws.com dbname=dad5d6kpdgpfh1 port=5432 user=hivuzafszyatzw password=8eeceeb27511ff702bd1f58ad6e491ee8d54f46cf1a0e45f3db1f4e636edbe1a sslmode=require");
-	 
+	$link = pg_connect("host=ec2-54-225-190-241.compute-1.amazonaws.com dbname=dd4i93hh9ooitm port=5432 user=wmwkvvsucgfftw password=4255f55c61b88e10d836bdabbefdf41db3cbaa7dcdccd6447d85c2dfd2e9d8d4 sslmode=require");
+
 	// Check connection
 	if($link === false){
 		die("ERROR: Could not connect.");
