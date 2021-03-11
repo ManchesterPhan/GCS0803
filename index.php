@@ -58,7 +58,7 @@
 			<form id="myform" action="product.php" method="post">
 				<p>
 					<label for="productid">Product ID<sup>*</sup></label>
-					<input type="text" name="id" id="productid">
+					<input type="text" name="id" id="id">
 				</p>
 				<p>
 					<label for="productname">Product Name<sup>*</sup></label>
@@ -66,7 +66,7 @@
 				</p>
 				<p>
 					<label for="productcat">Category</label>
-					<input type="text" name="cat" id="productcat">
+					<input type="text" name="category" id="category">
 				</p>
 								
 				<p>
@@ -76,7 +76,7 @@
 
 				<p>
 					<label for="description">Descriptions<sup>*</sup></label>
-					<textarea name="desc" id="description" rows="5" cols="30"></textarea>
+					<textarea name="desc" id="descriptions" rows="5" cols="30"></textarea>
 				</p>
 				<input type="submit" value="Submit">
 				<input type="reset" value="Reset">
